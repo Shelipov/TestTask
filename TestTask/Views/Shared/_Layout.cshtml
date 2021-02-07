@@ -38,13 +38,13 @@
         </div>
     </nav>
 
-    <partial name="_CookieConsentPartial" />
+    @*<partial name="_CookieConsentPartial" />*@
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2021 - TestTask</p>
+            <p>&copy; 2021 - sergeshelipov@gmail.com</p>
         </footer>
     </div>
 
@@ -68,7 +68,20 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
+    <style>
+        textarea {
+            background: #fce9c0; /* Цвет фона */
+            border: 2px solid #a9c358; /* Параметры рамки */
+            padding: 10px; /* Поля */
+            width: 100%; /* Ширина */
+            height: 200px; /* Высота */
+            box-sizing: border-box; /* Алгоритм расчёта ширины */
+            font-size: 14px; /* Размер шрифта */
+            resize: none;
+        }
+    </style>
 
+    
     @RenderSection("Scripts", required: false)
 </body>
 </html>
